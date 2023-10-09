@@ -9,9 +9,6 @@ import SwiftUI
 
 struct OrderTypeGridView: View {
     
-    private let orders:[String] = ["Restaurantes", "Farmácias", "Descontos", "Gourmet", "Mercados", "Pet", "Bebidas"]
-    
-    
     var body: some View {
         
         LazyHGrid(rows: [GridItem(.fixed(100)),
@@ -24,10 +21,20 @@ struct OrderTypeGridView: View {
                     Text(order.name)
                 }
             }
-        })
+        }).frame(height:200)
+            .padding(.horizontal,15)
+            .padding(.top,15)
+
     }
 }
 
-#Preview {
-    OrderTypeGridView()
+struct OrderTypeGridView_Previews: PreviewProvider {
+    static var previews: some View {
+        OrderTypeGridView()
+            .previewLayout(.sizeThatFits)
+            .padding()
+    }
 }
+
+
+

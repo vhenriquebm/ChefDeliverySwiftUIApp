@@ -9,11 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            Text("Hello, world!")
+        
+        VStack {
+            
+            NavigationBar()
+                .padding(.horizontal, 15)
+            
+            ScrollView(.vertical, showsIndicators: false, content: {
+                VStack {
+                    OrderTypeGridView()
+                }
+            })
+        }
     }
 }
 
-#Preview {
-    ContentView()
-        .previewLayout(.sizeThatFits)
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+        
+    }
 }
