@@ -21,7 +21,8 @@ struct StoresContainerView: View {
                     StoreItemView(orderType: mock)
                 }
             }
-        }.padding(20)
+        }
+        .padding(20)
     }
 }
 

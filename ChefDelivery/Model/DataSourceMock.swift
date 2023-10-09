@@ -22,5 +22,5 @@ let storesMock: [OrderType] = [
     OrderType(id: 2, name: "Food Court", image: "food-court-logo"),
     OrderType(id: 3, name: "Carbron", image: "carbron-logo"),
     OrderType(id: 4, name: "Bakery", image: "bakery-logo"),
-    OrderType(id: 5, name: "Açai Panda", image: "acai-panda-logo"),
+    OrderType(id: 5, name: "Açai Panda", image: "acai-panda-logo")
 ]
