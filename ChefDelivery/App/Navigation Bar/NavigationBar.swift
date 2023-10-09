@@ -22,7 +22,7 @@ struct NavigationBar: View {
                     .font(.title3)
                     .foregroundColor(.red)
             })
-        }
+        }.frame(height: 50)
         
     }
 }

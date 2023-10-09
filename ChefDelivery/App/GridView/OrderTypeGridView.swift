@@ -16,10 +16,15 @@ struct OrderTypeGridView: View {
                         ],
                   content: {
             ForEach(ordersMock) { order in
-                VStack {
-                    Image(order.image)
-                    Text(order.name)
+                
+                if let name = order.name {
+                    VStack {
+                        Image(order.image)
+                        Text(name)
+                    }
                 }
+                
+               
             }
         }).frame(height:200)
             .padding(.horizontal,15)

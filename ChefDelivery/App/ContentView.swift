@@ -16,18 +16,18 @@ struct ContentView: View {
                 .padding(.horizontal, 15)
             
             ScrollView(.vertical, showsIndicators: false, content: {
-                VStack {
+                VStack(spacing: 20) {
                     OrderTypeGridView()
+                    CarrouselTabView()
+                    StoresContainerView()
                 }
             })
         }
     }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        
     }
 }
